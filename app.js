@@ -73,8 +73,8 @@ const characters = [
 ];
 
 function generatePassword() {
-  span1.textContent = '';
-  span2.textContent = '';
+  let password1 = '';
+  let password2 = '';
 
   for (let i = 0; i < 15; i++) {
     paragraph.style.color = 'white';
@@ -82,11 +82,13 @@ function generatePassword() {
     //generate random pass for span1
     let random1 = Math.floor(Math.random() * characters.length);
     //store the generated random
-    span1.textContent += characters[random1];
+    password1 += characters[random1];
+    span1.textContent = password1;
 
     //generate random pass for span2
     let random2 = Math.floor(Math.random() * characters.length);
     //store the generated random2
-    span2.textContent += characters[random2];
+    password2 += characters[random1];
+    span2.textContent = password2;
   }
 }
