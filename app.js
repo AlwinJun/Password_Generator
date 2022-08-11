@@ -76,19 +76,17 @@ function generatePassword() {
   span1.textContent = '';
   span2.textContent = '';
 
-  if (spanFilled == false) {
-    for (let i = 0; i < 15; i++) {
-      paragraph.style.color = 'white';
+  for (let i = 0; i < 15; i++) {
+    paragraph.style.color = 'white';
 
-      //generate random pass for span1
-      let random1 = Math.floor(Math.random() * characters.length);
-      //store the generated random
-      span1.textContent += characters[random1];
+    //generate random pass for span1
+    let random1 = Math.floor(Math.random() * characters.length);
+    //store the generated random
+    span1.textContent += characters[random1];
 
-      //generate random pass for span2
-      let random2 = Math.floor(Math.random() * characters.length);
-      //store the generated random2
-      span2.textContent += characters[random2];
-    }
+    //generate random pass for span2
+    let random2 = Math.floor(Math.random() * characters.length);
+    //store the generated random2
+    span2.textContent += characters[random2];
   }
 }
