@@ -1,7 +1,6 @@
 const span1 = document.querySelector('#span-1');
 const span2 = document.querySelector('#span-2');
 const paragraph = document.querySelector('p');
-let spanFilled = false;
 
 //Set of letters,char and number
 const characters = [
@@ -74,12 +73,8 @@ const characters = [
 ];
 
 function generatePassword() {
-  if (spanFilled == true) {
-    span1.textContent = '';
-    span2.textContent = '';
-
-    spanFilled = false;
-  }
+  span1.textContent = '';
+  span2.textContent = '';
 
   if (spanFilled == false) {
     for (let i = 0; i < 15; i++) {
@@ -95,7 +90,5 @@ function generatePassword() {
       //store the generated random2
       span2.textContent += characters[random2];
     }
-
-    spanFilled = true;
   }
 }
