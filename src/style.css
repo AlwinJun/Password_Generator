@@ -63,14 +63,45 @@ hr {
   justify-content: space-between;
 }
 
-.blank-span span {
+.span-container {
+  position: relative;
+}
+
+.blank-span #span-1,
+.blank-span #span-2 {
+  display: block;
   width: 11rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-block: 0.3rem;
   text-align: center;
   font-size: 1rem;
   color: #55f991;
   background-color: #273549;
   border-radius: 7px;
+}
+
+.blank-span span:hover {
+  cursor: pointer;
+}
+
+.copied {
+  display: none;
+}
+
+.show {
+  display: block;
+  position: absolute;
+  width: 60%;
+  line-height: 1.5;
+  bottom: -3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #222;
+  background-color: #eee;
+  border-radius: 5px;
 }
 
