@@ -1,3 +1,5 @@
+import './style.css';
+
 const span1 = document.querySelector('#span-1');
 const span2 = document.querySelector('#span-2');
 const paragraph = document.querySelector('p');
@@ -76,7 +78,7 @@ function generatePassword() {
   let password1 = '';
   let password2 = '';
 
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 10; i++) {
     paragraph.style.color = 'white';
 
     //generate random pass for span1
@@ -92,3 +94,4 @@ function generatePassword() {
     span2.textContent = password2;
   }
 }
+
